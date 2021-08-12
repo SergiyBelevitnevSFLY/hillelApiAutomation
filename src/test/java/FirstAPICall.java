@@ -4,12 +4,18 @@ import com.mashape.unirest.http.exceptions.UnirestException;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.io.IOException;
 
 public class FirstAPICall {
 
+
+    @BeforeMethod
+    public void before(){
+
+    }
 
     @Test
     public void firstApiCall() throws UnirestException {
